@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR PAGES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.jpg" />
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <div class="header">
+            <div id="headtext">
+                <h1><a class="headlink" href="index.html">YOUR PAGES</a></h1>
+                <h4 id="headerdot">.</h4>
+                <h5>ADDRESS</h5>
+                <h5>PHONE</h5>
+                <h5>EMAIL</h5>
+            </div>
+        </div>
+        <!-- Header -->
+        
+        <!-- Menu -->
+        <div class="menu">
+            <div class="dropdown">
+                <button onclick="location.href='index.html'" class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#wel">WELCOME</a>
+                        <a href="index.html#fou">4</a>
+                        <a href="index.html#two">2</a>
+                        <a href="index.html#fiv">5</a>
+                        <a href="index.html#thr">3</a>
+                        <a href="index.html#six">6</a>     
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="location.href='aboutus.html'" class="dropbtn">ABOUT</button>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html#about">ABOUT</a>
+                        <a href="aboutus.html#thr">3</a>
+                        <a href="aboutus.html#two">2</a>
+                        <a href="aboutus.html#fou">4</a>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="location.href='photos.html'" class="dropbtn">PHOTOS</button>
+            </div>
+        </div>
+        <!-- Menu -->
+        
+        <!-- Content -->
+        <!-- Slide-show -->
+        <div id="frame">      
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images2/canadian-goose.jpg" style="width:100%;height:20%">
+            <div class="text">1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images2/car.jpeg" style="width:100%;height:20%">
+            <div class="text">2</div>
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span>     
+        </div>
+        </div>
+        <div id="frame2">      
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images2/green.jpeg" style="width:100%;height:20%">
+                <div class="text">3</div>
+            </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images2/desert.jpeg" style="width:100%;height:20%">
+            <div class="text">4</div>
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        </div>
+        <div id="frame2">      
+        <div class="slideshow-container">
+        </div>
+        <br>
+        </div>
+        <div id="frame2">      
+        <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        </div>
+        <!-- Content -->
+
+        <div id="newgallery">      
+            <img id="myImg" src="images2/canadian-goose.jpg" alt="Description" style="width:60%;max-width:300px">
+            <img id="myImg" src="images2/car.jpeg" alt="Description" style="width:60%;max-width:300px">
+            <img id="myImg" src="images2/green.jpeg" alt="Description" style="width:60%;max-width:300px">
+            <img id="myImg" src="images2/desert.jpeg" alt="Description" style="width:60%;max-width:300px">
+
+         <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <img class="modal-content" id="img02">
+            <div id="caption"></div>
+         </div>
+        </div>    
+        
+        <!-- Slide-show -->
+        
+        <!-- Top Button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to the top">⇑</button>
+        <!-- Top Button -->
+       
+        <!-- Footer -->
+        <div class="footer" id="pho">
+            <div class="foottext">
+                <a class="admin" href="">Admin</a>
+            </div>
+            <p class="footp">&copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </p>
+        </div>
+        <!-- Footer -->
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+        </script>
+        
+    </body>
+</html>

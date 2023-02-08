@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOUR PAGES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1'></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.jpg" />
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <div class="header">
+            <div id="headtext">
+                <h1><a class="headlink" href="index.html">YOUR PAGES</a></h1>
+                <h4 id="headerdot">.</h4>
+                <h5>ADDRESS</h5>
+                <h5>PHONE</h5>
+                <h5>EMAIL</h5>
+            </div>
+        </div>
+        <!-- Header -->
+        
+        <!-- Menu -->
+        <div class="menu">
+            <div class="dropdown">
+                <button onclick="location.href='index.html'" class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="#wel">WELCOME</a>
+                        <a href="#fou">4</a>
+                        <a href="#two">2</a>
+                        <a href="#fiv">5</a>
+                        <a href="#thr">3</a>
+                        <a href="#six">6</a>     
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="location.href='aboutus.html'" class="dropbtn">ABOUT</button>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html#about">ABOUT</a>
+                        <a href="aboutus.html#thr">3</a>
+                        <a href="aboutus.html#two">2</a>
+                        <a href="aboutus.html#fou">4</a>
+                    </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="location.href='photos.html'" class="dropbtn">PHOTOS</button>
+            </div>
+        </div>
+        <!-- Menu -->
+                     
+        <!-- Content -->
+        <div class="row">
+            <div class="leftcolumn">
+                <!-- Welcome -->
+                <div id="wel">
+                    <div id="rotating-item-wrapper"> 
+                        <img src="images/ship.jpg" class="rotating-item"/>
+                        <img src="images/northern-cardinal_800.jpg" class="rotating-item"/>
+                        <img src="images/nat-weerawong.jpg" class="rotating-item"/>
+                        <div class="content">
+                            <h2>Welcome</h2>
+                            <p>A web page (or webpage) is a hypertext document on the World Wide Web.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Welcome -->
+                <!-- 2 --> 
+                <div id="two">
+                    <div class="headcard">
+                        <h2 class="headstyle">2</h2>
+                    </div>
+                    <h3>Web pages</h3>
+                    <p>Web pages are delivered by a web server to the user and displayed.</p>
+                    <p class="whitespace">-</p>
+                    <h3>Website</h3>
+                    <p>A website consists of many web pages linked together under a common domain name.</p>
+                    <p class="whitespace">-</p>
+                    <h3>"Web page"</h3>
+                    <p>The name "web page" is a metaphor of paper pages bound together into a book.</p>
+                </div>
+                <!-- 2 -->
+                <!-- 3 --> 
+                <div id="thr">
+                    <div class="headcard">
+                        <h2 class="headstyle">3</h2>
+                    </div>
+                    <h3>File</h3>
+                    <p>The core element of a web page is a text file written in the HyperText Markup Language (HTML).</p>
+                    <p class="whitespace">-</p>
+                    <h3>HTML</h3>
+                    <p>Describes the content of the web page and includes references to other web resources.</p>
+                    <p class="whitespace">-</p>
+                    <h3>Web page</h3>
+                    <p>A web page is a structured document that primarily consists of hypertext, text with hyperlinks.</p>
+                </div>
+                <!-- 3 --> 
+            </div>
+            <div class="rightcolumn">
+                <!-- 4 -->
+                <div id="fou">
+                    <div class="headcard">
+                        <h2 class="headstyle">4</h2>
+                    </div>
+                    <div class="suplink">
+                        <h3>Support</h3>
+                        <a class="link" href="#">Click Support</a>
+                    </div>
+                    <div class="helplink">
+                        <h3>Help</h3>
+                        <a class="link" href="#">Click Help</a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <!-- 5 -->
+                <div id="fiv">
+                    <div class="headcard">
+                        <h2 class="headstyle">5 Google Maps Development</h2>
+                    </div>
+                    <div id="map"></div>
+                    <!-- googleapis.com/maps/api/js?key=here -->
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" 
+                    type="text/javascript">      
+                    </script>
+                </div>
+                <!-- 5 -->
+                <!-- 6 -->
+                <div id="six">
+                    <div class="headcard">
+                        <h2 class="headstyle">6</h2>
+                    </div>
+                    <h3>Hyperlinks</h3>
+                    <p>Hyperlinks point the user to other web resources, primarily other web pages, and to different sections of the same web page.</p>
+                </div>
+                <!-- 6 -->
+            </div>
+        </div>
+        <!-- Content -->
+        
+        <!-- Top Button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to the top">⇑</button>
+        <!-- Top Button -->
+       
+        <!-- Footer -->
+        <div class="footer">
+            <div class="foottext">
+                <a class="admin" href="">Admin</a>
+            </div>
+            <p class="footp">&copy;
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </p>
+        </div>
+        <!-- Footer -->
+        
+    </body>
+</html>
