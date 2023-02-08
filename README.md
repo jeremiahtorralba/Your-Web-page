@@ -1,5 +1,5 @@
 # Your-Web-page
-HTML, CSS, and JavaScript Web Page template. [Rotating Images]() [Google Maps API]()
+HTML, CSS, and JavaScript Web Page template. [Rotating Images](https://github.com/jeremiahtorralba/Your-Web-page/blob/main/README.md#re-usable-web-page-layouts) [Google Maps API](https://github.com/jeremiahtorralba/Your-Web-page/blob/main/README.md#google-maps-api-development)
 
 ### Re-usable Web page layouts.
 
