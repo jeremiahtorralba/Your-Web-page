@@ -1,5 +1,5 @@
 # Your-Web-page
-HTML, CSS, and JavaScript Web Page template.
+HTML, CSS, and JavaScript Web Page template. [Rotating Images]() [Google Maps API]()
 
 ### Re-usable Web page layouts.
 
