@@ -7,6 +7,7 @@
 * images folder
 * images2 folder
 * style.css styling
+
 HTML, CSS, and JavaScript Web Page template. [Rotating Images](https://github.com/jeremiahtorralba/Your-Web-page/blob/main/README.md#rotating-images-copyright-c-2010-trendmedia-technologies-inc-brian-mcnitt-all-rights-reserved) [Google Maps API](https://github.com/jeremiahtorralba/Your-Web-page/blob/main/README.md#google-maps-api-development)
 
 ### Re-usable Web page layouts.
